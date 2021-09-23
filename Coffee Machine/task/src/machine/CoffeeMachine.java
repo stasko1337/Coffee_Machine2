@@ -11,16 +11,12 @@ public class CoffeeMachine {
         int coffeeBeans_g = 15;
 
         System.out.println("Write how many ml of water the coffee machine has:");
-        System.out.print("> ");
         int storageWater_ml = scanner.nextInt();
         System.out.println("Write how many ml of milk the coffee machine has:");
-        System.out.print("> ");
         int storageMilk_ml = scanner.nextInt();
         System.out.println("Write how many grams of coffee beans the machine has:");
-        System.out.print("> ");
         int storageBeans_g = scanner.nextInt();
         System.out.println("Write how many cups of coffee you will need:");
-        System.out.print("> ");
         int cups = scanner.nextInt();
 
         int waterOrder = cups * coffeeWater_ml;
@@ -50,7 +46,7 @@ public class CoffeeMachine {
             System.out.println("Yes, I can make that amount of coffee (and even " + leftoverCups + " more than that)");
         }
         else if (storageWater_ml - waterOrder >= 0 && storageMilk_ml - milkOrder >= 0 && storageBeans_g - beansOrder >= 0) {
-            System.out.println("Yes, I can make that amount  of coffee");
+            System.out.println("Yes, I can make that amount of coffee");
         }
         else {
             System.out.println("No, I can only make " + totalCupsStorage + " cup(s) of coffee");
